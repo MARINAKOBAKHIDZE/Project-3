@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === "test") {
 //   res.json(customers);
 // });
 
-app.use("/api/homes", Homes)
+// app.use("/api/homes", Homes)
 
 const PORT = 5000;
 
