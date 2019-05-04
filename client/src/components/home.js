@@ -26,7 +26,7 @@ class Homes extends Component {
     return (
       <div>
         <a type="button">
-          <i> <Link to={"/home"}>find your next home </Link></i>
+          <i> <Link to={"/findahome/"}>find your next home </Link></i>
         </a>
    </div>
     );

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Home from './components/home.js';
 import { BrowserRouter as Router ,Route } from "react-router-dom";
-import Forsale from "./components/homesSale";
+import Forsale from "./components/findahome/homesSale";
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
 
         <Router>
           <Route exact path={"/"} component={Home} />
-          <Route path={"/home"} component={Forsale} />
+          <Route path={"/findahome/"} component={Forsale} />
         </Router>
         </div>
 
