@@ -1,28 +1,72 @@
-.App {
-  text-align: center;
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.footer {
+  background-color: #D1C4E9;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.jumbotron {
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background: #9575CD !important;
+  color: floralwhite;
 }
 
-.App-intro {
-  font-size: large;
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/*navbar style*/
+.navbar {
+  background-color: #363636;
+  padding: 30px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #008ba3;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(79, 154, 148, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.dropdown button{
+  background-color: #363636;
+  border-color: #363636;
+}
+
+
+/* Background Image */
+body {
+  background: url(/assets/images/kitchen.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*Footer: NOTE code below will cover the middle of the page if less than full page*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.centered-links {
+  background-color: #E1E2E1;
+}
+
+.icons {
+  font-size: 48px;
+  color: #9a0007;
 }
