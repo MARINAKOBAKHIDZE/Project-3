@@ -5,7 +5,7 @@ function Home(props) {
         <div className="row row-content justify-content-center lead">
             <div className="col-lg-3 text-center centered-links">
                 <span className="icons">
-                    <i class="fa fa-home"aria-hidden="true"></i>
+                    <i className="fa fa-home"aria-hidden="true"></i>
                 </span>
                 <h1 className="display-4">Buy</h1>
                 <p>Click Here For A List Of Homes To Buy</p>
