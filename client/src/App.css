@@ -39,9 +39,9 @@ address {
   border-color: #008ba3;
 }
 
-/* .navbar-light .navbar-toggler-icon {
+.navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(79, 154, 148, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} */
+}
 
 .dropdown button{
   background-color: #363636;
@@ -51,7 +51,7 @@ address {
 
 /* Background Image */
 body {
-  background: url(/assets/images/homes.png) no-repeat center center fixed;
+  background: url(/client/public/assets/homes.png) no-repeat center center fixed;
   background-size: cover;
 }
 
