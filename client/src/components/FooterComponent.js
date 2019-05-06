@@ -9,10 +9,10 @@ function Footer(props) {
                 <div className="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul className="list-unstyled">
-                            <li><Link to='/home'>Apply</Link></li>
-                            <li><Link to='/aboutus'>Tenants</Link></li>
-                            <li><Link to='/menu'>Maintenance</Link></li>
-                            <li><Link to='/contactus'>Community Info</Link></li>
+                            <li><Link to='/home'>Example List</Link></li>
+                            <li><Link to='/aboutus'>Example List</Link></li>
+                            <li><Link to='/menu'>Example List</Link></li>
+                            <li><Link to='/contactus'>Example List</Link></li>
                     </ul>
                 </div>
                 <div className="col-12 col-sm-4 align-self-center">
@@ -28,7 +28,7 @@ function Footer(props) {
             </div>
             <div className="row justify-content-center">             
                 <div className="col-auto">
-                    <p>� Copyright 2018 Ristorante Con Fusion</p>
+                    <p>� Copyright 2018 Michael, Eric, Maka, & Tyler</p>
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ class Header extends Component {
             <div>
                 <Navbar dark expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/">Westgate Property</NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/">Real-Estate App</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="ml-auto">

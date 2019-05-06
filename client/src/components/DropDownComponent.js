@@ -48,7 +48,7 @@ class DropDown extends React.Component {
                 </Dropdown>
                 <Dropdown className="d-md-inline-block" onMouseOver={() => this.onMouseEnter("tenantDropdownOpen")} onMouseLeave={() => this.onMouseLeave("tenantDropdownOpen")} isOpen={this.state.tenantDropdownOpen} toggle={this.toggle}>
                     <DropdownToggle>
-                        Tenants
+                        Null
                     </DropdownToggle>
                     <DropdownMenu>
                         <DropdownItem header>Header</DropdownItem>
@@ -60,7 +60,7 @@ class DropDown extends React.Component {
                 </Dropdown>
                 <Dropdown className="d-md-inline-block" onMouseOver={() => this.onMouseEnter("maintenanceDropdownOpen")} onMouseLeave={() => this.onMouseLeave("maintenanceDropdownOpen")} isOpen={this.state.maintenanceDropdownOpen} toggle={this.toggle}>
                     <DropdownToggle>
-                        Maintenance
+                        Null
                     </DropdownToggle>
                     <DropdownMenu>
                         <DropdownItem header>Header</DropdownItem>
@@ -72,7 +72,7 @@ class DropDown extends React.Component {
                 </Dropdown>
                 <Dropdown className="d-md-inline-block" onMouseOver={() => this.onMouseEnter("communityDropdownOpen")} onMouseLeave={() => this.onMouseLeave("communityDropdownOpen")} isOpen={this.state.communityDropdownOpen} toggle={this.toggle}>
                     <DropdownToggle>
-                        Community Info
+                        Null
                     </DropdownToggle>
                     <DropdownMenu>
                         <DropdownItem header>Header</DropdownItem>
