@@ -17,7 +17,11 @@
     "nodemon": "^1.14.6"
   },
   "dependencies": {
+<<<<<<< HEAD
     "build": "^0.1.4",
+=======
+    "bootstrap-social": "^5.1.1",
+>>>>>>> michaelsbranch1
     "concurrently": "^3.5.1",
     "dotenv": "^7.0.0",
     "express": "^4.16.2",
@@ -26,9 +30,15 @@
     "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+<<<<<<< HEAD
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.0.0",
+=======
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.0",
+    "reactstrap": "^8.0.0",
+>>>>>>> michaelsbranch1
     "sequelize": "^5.7.5"
   }
 }
