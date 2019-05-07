@@ -11,27 +11,33 @@
 }
 
 .footer {
-  background-color:#cc0d17;
+  background-color:#008ba3;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
+}
+
+.header {
+  background-color: #E1E2E1;
+  position: absolute;
+  margin: 10px;
 }
 
 .jumbotron {
   padding: 70px 30px 70px 30px;
   margin: 0px auto;
-  background: #cc0d17 !important;
+  background: #008ba3 !important;
   color: floralwhite;
 }
 
 address {
   font-size: 80%;
   margin: 0px;
-  color: #0f0f0f;
+  color: wheat;
 }
 
 /*navbar style*/
 .navbar {
-  background-color: #363636;
+  background-color: rgb(90, 147, 161);
   padding: 30px;
 }
 
@@ -40,7 +46,7 @@ address {
 }
 
 .dropdown button{
-  background-color: #363636;
+  background-color: #2b5a3e;
   border-color: #363636;
 }
 
@@ -53,7 +59,6 @@ body {
 
 /*Footer: NOTE code below will cover the middle of the page if less than full page*/
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
