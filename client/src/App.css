@@ -10,6 +10,10 @@
   min-height: 400px;
 }
 
+.d-md-inline-block{
+  padding: 10px;
+}
+
 .footer {
   background-color:#008ba3;
   margin: 0px auto;
@@ -55,6 +59,7 @@ address {
 body {
   background: url(/client/public/assets/house.jpg) no-repeat center center fixed;
   background-size: cover;
+  background-color: #363636;
 }
 
 /*Footer: NOTE code below will cover the middle of the page if less than full page*/

@@ -30,7 +30,7 @@ function Home(props) {
                     <i className="fa fa-search-plus"aria-hidden="true"></i>            
                 </span>
                 <h1 className="display-4">Find Agent</h1>
-                <p>Click Here To Find an Agent</p>
+                <p>Click Here To Find/Contact an Agent Today!</p>
                 <a href="#" className="btn btn-lg button-content" role="button">Agent</a>        
             </div>
       </div>
