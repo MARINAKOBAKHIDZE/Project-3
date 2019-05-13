@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
-import './App.css';
-import Home from './pages/Home';
-import Houses from './pages/Houses';
-import SingleHome from './pages/SingleHomes';
-import Error from './pages/Error';
+import React from "react";
+import "./App.css";
 
-import{Route, Switch} from 'react-router-dom';
-import NavBar from './components/Navbar';
+import Home from "./pages/Home";
+import Houses from "./pages/Houses";
+import SingleHouse from "./pages/SingleHouse";
+import Error from "./pages/Error";
+
+import Navbar from "./components/Navbar";
+
+import { Switch, Route } from "react-router-dom";
 
 function App() {
-    return (
+  return (
     <>
-        <NavBar />
-        <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/houses" component={Houses}/>
-            <Route exact path="/houses/:slug" component={SingleHome}/>
-            <Route component={Error} />
-        </Switch>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/houses/" component={Houses} />
+        <Route exact path="/houses/:slug" component={SingleHouse} />
+        <Route component={Error} />
+      </Switch>
     </>
-    );    
+  );
 }
 
 export default App;
-
-
-

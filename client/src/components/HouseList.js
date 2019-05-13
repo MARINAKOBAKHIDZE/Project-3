@@ -1,22 +1,22 @@
 import React from "react";
-import Room from "./Room";
-const RoomsList = ({ rooms }) => {
-  if (rooms.length === 0) {
+import house from "./house";
+const housesList = ({ houses }) => {
+  if (houses.length === 0) {
     return (
       <div className="empty-search">
-        <h3>unfortunately no rooms matched your search parameters</h3>
+        <h3>unfortunately no houses matched your search parameters</h3>
       </div>
     );
   }
   return (
-    <section className="roomslist">
-      <div className="roomslist-center">
-        {rooms.map(item => {
-          return <Room key={item.id} room={item} />;
+    <section className="houseslist">
+      <div className="houseslist-center">
+        {houses.map(item => {
+          return <house key={item.id} house={item} />;
         })}
       </div>
     </section>
   );
 };
 
-export default RoomsList;
+export default housesList;

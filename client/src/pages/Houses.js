@@ -2,20 +2,20 @@ import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import RoomsContainer from "../components/RoomsContainer";
-const Rooms = () => {
+import HouseContainer from "../components/HouseContainer";
+const houses = () => {
   return (
     <>
-      <Hero hero="roomsHero">
-        <Banner title="our rooms">
+      <Hero hero="housesHero">
+        <Banner title="our houses">
           <Link to="/" className="btn-primary">
             return home
           </Link>
         </Banner>
       </Hero>
-      <RoomsContainer />
+      <HouseContainer />
     </>
   );
 };
 
-export default Rooms;
+export default houses;

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import defaultBcg from "../images/room-1.jpeg";
+import defaultBcg from "../images/house-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
-import { RoomContext } from "../context";
+import { HouseContext } from "../context";
 
 import StyledHero from "../components/StyledHero";
-export default class SingleRoom extends Component {
+export default class SingleHouse extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -15,21 +15,21 @@ export default class SingleRoom extends Component {
       defaultBcg: defaultBcg
     };
   }
-  static contextType = RoomContext;
+  static contextType = HouseContext;
 
   // componentDidMount() {
   //   console.log(this.props);
   // }
   render() {
-    const { getRoom } = this.context;
-    const room = getRoom(this.state.slug);
+    const { getHouse } = this.context;
+    const house = getHouse(this.state.slug);
 
-    if (!room) {
+    if (!house) {
       return (
         <div className="error">
-          <h3> no such room could be found...</h3>
-          <Link to="/rooms" className="btn-primary">
-            back to rooms
+          <h3> no such house could be found...</h3>
+          <Link to="/houses" className="btn-primary">
+            back to houses
           </Link>
         </div>
       );
@@ -44,26 +44,26 @@ export default class SingleRoom extends Component {
       breakfast,
       pets,
       images
-    } = room;
+    } = house;
     const [main, ...defaultImages] = images;
     console.log(defaultImages);
 
     return (
       <>
         <StyledHero img={images[0] || this.state.defaultBcg}>
-          <Banner title={`${name} room`}>
-            <Link to="/rooms" className="btn-primary">
-              back to rooms
+          <Banner title={`${name} house`}>
+            <Link to="/houses" className="btn-primary">
+              back to houses
             </Link>
           </Banner>
         </StyledHero>
-        <section className="single-room">
-          <div className="single-room-images">
+        <section className="single-house">
+          <div className="single-house-images">
             {defaultImages.map((item, index) => (
               <img key={index} src={item} alt={name} />
             ))}
           </div>
-          <div className="single-room-info">
+          <div className="single-house-info">
             <article className="desc">
               <h3>details</h3>
               <p>{description}</p>
@@ -81,7 +81,7 @@ export default class SingleRoom extends Component {
             </article>
           </div>
         </section>
-        <section className="room-extras">
+        <section className="house-extras">
           <h6>extras </h6>
           <ul className="extras">
             {extras.map((item, index) => (

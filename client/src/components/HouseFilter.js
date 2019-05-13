@@ -1,15 +1,15 @@
 import React from "react";
 import { useContext } from "react";
-import { RoomContext } from "../context";
+import { HouseContext } from "../context";
 import Title from "./Title";
 // get all unique values
 const getUnique = (items, value) => {
   return [...new Set(items.map(item => item[value]))];
 };
 
-const RoomsFilter = ({ rooms }) => {
+const HouseFilter = ({ houses }) => {
   // react hooks
-  const context = useContext(RoomContext);
+  const context = useContext(HouseContext);
   const {
     handleChange,
     type,
@@ -24,7 +24,7 @@ const RoomsFilter = ({ rooms }) => {
   } = context;
 
   // get unique types
-  let types = getUnique(rooms, "type");
+  let types = getUnique(houses, "type");
   // add all
   types = ["all", ...types];
   // map to jsx
@@ -34,7 +34,7 @@ const RoomsFilter = ({ rooms }) => {
     </option>
   ));
   // get unique capacity
-  let people = getUnique(rooms, "capacity");
+  let people = getUnique(houses, "capacity");
   people = people.map((item, index) => (
     <option key={index} value={item}>
       {item}
@@ -42,11 +42,11 @@ const RoomsFilter = ({ rooms }) => {
   ));
   return (
     <section className="filter-container">
-      <Title title="search rooms" />
+      <Title title="search houses" />
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
-          <label htmlFor="type">room type</label>
+          <label htmlFor="type">house type</label>
           <select
             name="type"
             id="type"
@@ -72,9 +72,9 @@ const RoomsFilter = ({ rooms }) => {
           </select>
         </div>
         {/* end of guests */}
-        {/* room price */}
+        {/* house price */}
         <div className="form-group">
-          <label htmlFor="price">room price ${price}</label>
+          <label htmlFor="price">house price ${price}</label>
           <input
             type="range"
             name="price"
@@ -86,10 +86,10 @@ const RoomsFilter = ({ rooms }) => {
             className="form-control"
           />
         </div>
-        {/* end of room price*/}
+        {/* end of house price*/}
         {/* size */}
         <div className="form-group">
-          <label htmlFor="price">room size </label>
+          <label htmlFor="price">house size </label>
           <div className="size-inputs">
             <input
               type="number"
@@ -136,4 +136,4 @@ const RoomsFilter = ({ rooms }) => {
   );
 };
 
-export default RoomsFilter;
+export default HouseFilter;

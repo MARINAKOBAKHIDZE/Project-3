@@ -1,44 +1,20 @@
 import React from "react";
-import { withRoomConsumer } from "../context";
+import { withHouseConsumer } from "../context";
 import Loading from "./Loading";
-import RoomsFilter from "./RoomsFilter";
-import RoomsList from "./RoomsList";
+import HouseFilter from "./HouseFilter";
+import HouseList from "./HouseList";
 
-function RoomContainer({ context }) {
-  const { loading, sortedRooms, rooms } = context;
+function HouseContainer({ context }) {
+  const { loading, sortedhouses, houses } = context;
   if (loading) {
     return <Loading />;
   }
   return (
     <>
-      <RoomsFilter rooms={rooms} />
-      <RoomsList rooms={sortedRooms} />
+      <HouseFilter houses={houses} />
+      <HouseList houses={sortedhouses} />
     </>
   );
 }
 
-export default withRoomConsumer(RoomContainer);
-
-// import React from "react";
-// import { RoomConsumer } from "../context";
-// import Loading from "./Loading";
-// import RoomsFilter from "./RoomsFilter";
-// import RoomsList from "./RoomsList";
-// export default function RoomContainer() {
-//   return (
-//     <RoomConsumer>
-//       {value => {
-//         const { loading, setRoom, sortedRooms,rooms } = value;
-//         if (loading) {
-//           return <Loading />;
-//         }
-//         return (
-//           <>
-//             <RoomsFilter rooms={rooms} />
-//             <RoomsList rooms={sortedRooms} setRoom={setRoom} />
-//           </>
-//         );
-//       }}
-//     </RoomConsumer>
-//   );
-// }
+export default withHouseConsumer(HouseContainer);
