@@ -1,5 +1,5 @@
 import React from "react";
-import house from "./house";
+import House from "./House";
 const housesList = ({ houses }) => {
   if (houses.length === 0) {
     return (

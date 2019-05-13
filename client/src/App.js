@@ -3,7 +3,7 @@ import "./App.css";
 
 import Home from "./pages/Home";
 import Houses from "./pages/Houses";
-import SingleHouse from "./pages/SingleHouse";
+import SingleHomes from "./pages/SingleHomes";
 import Error from "./pages/Error";
 
 import Navbar from "./components/Navbar";
@@ -17,7 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/houses/" component={Houses} />
-        <Route exact path="/houses/:slug" component={SingleHouse} />
+        <Route exact path="/houses/:slug" component={SingleHomes} />
         <Route component={Error} />
       </Switch>
     </>

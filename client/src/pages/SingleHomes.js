@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { HouseContext } from "../context";
 
 import StyledHero from "../components/StyledHero";
-export default class SingleHouse extends Component {
+export default class SingleHomes extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
