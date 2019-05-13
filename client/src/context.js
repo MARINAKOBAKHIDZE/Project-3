@@ -6,7 +6,7 @@ class HouseProvider extends Component {
     state={};
   render() {
     return (
-      <HouseContext.Provider value="Hello">
+      <HouseContext.Provider value={"Hello"}>
       {this.props.children}
       </HouseContext.Provider>
     );
