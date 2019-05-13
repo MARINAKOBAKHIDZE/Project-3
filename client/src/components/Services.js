@@ -1,39 +1,27 @@
 import React, { Component } from "react";
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
+import { FaCcAmex , FaUserSecret } from "react-icons/fa";
 import Title from "./Title";
 export default class Services extends Component {
   state = {
     services: [
       {
-        icon: <FaCocktail />,
-        title: "Free Cocktails",
+        icon: <FaCcAmex />,
+        title: "Bussiness Credit vs Personal Credit ",
         info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
+        "Can your work card have an impact on your credit score? The answer may surprise you."
       },
       {
-        icon: <FaHiking />,
-        title: "Endless Hiking",
+        icon: <FaUserSecret />,
+        title: "Do you need an agent?",
         info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
+        "Before you make a decision, be sure you understand how much an agent can do for you as a home buyer."
       },
-      {
-        icon: <FaShuttleVan />,
-        title: "Free Shuttle",
-        info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
-      },
-      {
-        icon: <FaBeer />,
-        title: "Strongest Beer",
-        info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
-      }
     ]
   };
   render() {
     return (
       <section className="services">
-        <Title title="services" />
+        <Title title="Helping First Time Buyers" />
         <div className="services-center">
           {this.state.services.map(item => {
             return (

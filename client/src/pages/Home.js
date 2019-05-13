@@ -8,17 +8,14 @@ const home = () => {
   return (
     <>
       <Hero>
-        <Banner
-          title="luxurious houses"
-          subtitle="deluxe houses starting at $299"
-        >
+        <Banner title="luxurious houses" subtitle="Your Dream House Is Our Mission">
           <Link to="/houses" className="btn-primary">
             our houses
           </Link>
         </Banner>
       </Hero>
       <Services />
-      <Featuredhouses />
+      {/* <Featuredhouses /> */}
     </>
   );
 };

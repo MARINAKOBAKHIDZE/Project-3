@@ -17,9 +17,7 @@ export default class HouseProvider extends Component {
     minPrice: 0,
     maxPrice: 0,
     minSize: 0,
-    maxSize: 0,
-    breakfast: false,
-    pets: false
+    maxSize: 0
   };
 
   getData = async () => {
@@ -102,9 +100,7 @@ export default class HouseProvider extends Component {
       capacity,
       price,
       minSize,
-      maxSize,
-      breakfast,
-      pets
+      maxSize
     } = this.state;
 
     let temphouses = [...houses];
@@ -126,14 +122,6 @@ export default class HouseProvider extends Component {
     temphouses = temphouses.filter(
       house => house.size >= minSize && house.size <= maxSize
     );
-    //filter by breakfast
-    if (breakfast) {
-      temphouses = temphouses.filter(house => house.breakfast === true);
-    }
-    //filter by pets
-    if (pets) {
-      temphouses = temphouses.filter(house => house.pets === true);
-    }
     this.setState({
       sortedhouses: temphouses
     });
