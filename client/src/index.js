@@ -5,10 +5,13 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 //import './index.css';
 import App from './App';
 import * as serviceWorker from './registerServiceWorker';
+import {HouseProvider} from './context';
 ReactDOM.render(
-    <Router>
+    <HouseProvider>
+        <Router>
         <App />
-    </Router>,
+        </Router>
+    </HouseProvider>,
 document.getElementById('root')
 );
 
