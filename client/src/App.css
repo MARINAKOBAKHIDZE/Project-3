@@ -100,7 +100,14 @@ h6 {
 .nav-header {
   display: flex;
   justify-content: space-between;
+  text-decoration: #cfcfcf;
 }
+
+.realLogo{
+  height: 65px;
+  width: 65px;
+}
+
 .nav-btn {
   background: transparent;
   border: none;

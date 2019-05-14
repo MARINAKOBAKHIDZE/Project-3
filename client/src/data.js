@@ -23,7 +23,7 @@ export default [
     fields: {
       name: "House 1",
       slug: "single-economy",
-      type: "house",
+      type: "Castle",
       price: 100000,
       size: 200,
       capacity: 1,
@@ -75,7 +75,7 @@ export default [
     fields: {
       name: "House 2",
       slug: "single-basic",
-      type: "house",
+      type: "Mansion",
       price: 150000,
       size: 250,
       featured: false,
@@ -123,7 +123,7 @@ export default [
     fields: {
       name: "House 3",
       slug: "single-standard",
-      type: "house",
+      type: "Mansion",
       price: 250000,
       size: 300,
       featured: false,
@@ -171,7 +171,7 @@ export default [
     fields: {
       name: "House 4",
       slug: "single-deluxe",
-      type: "house",
+      type: "House",
       price: 300000,
       size: 400,
       featured: false,
@@ -219,7 +219,7 @@ export default [
     fields: {
       name: "House 5",
       slug: "double-economy",
-      type: "house",
+      type: "House",
       price: 200000,
       size: 300,
       featured: false,
@@ -267,7 +267,7 @@ export default [
     fields: {
       name: "House 6",
       slug: "double-basic",
-      type: "house",
+      type: "House",
       price: 250000,
       size: 350,
       featured: false,
@@ -315,7 +315,7 @@ export default [
     fields: {
       name: "House 7",
       slug: "double-standard",
-      type: "double",
+      type: "Apartment",
       price: 300000,
       size: 400,
       featured: false,
@@ -363,7 +363,7 @@ export default [
     fields: {
       name: "House 8",
       slug: "double-deluxe",
-      type: "double",
+      type: "Apartment",
       price: 400000,
       size: 500,
       featured: true,
@@ -411,7 +411,7 @@ export default [
     fields: {
       name: "House 9",
       slug: "family-economy",
-      type: "family",
+      type: "Apartment",
       price: 300000,
       size: 500,
       featured: false,
@@ -459,7 +459,7 @@ export default [
     fields: {
       name: "House 10",
       slug: "family-basic",
-      type: "family",
+      type: "Apartment",
       price: 350000,
       size: 550,
       featured: false,
@@ -507,7 +507,7 @@ export default [
     fields: {
       name: "House 11",
       slug: "family-standard",
-      type: "family",
+      type: "Apartment",
       price: 400000,
       size: 600,
       featured: false,
@@ -555,7 +555,7 @@ export default [
     fields: {
       name: "House 12",
       slug: "family-deluxe",
-      type: "family",
+      type: "Apartment",
       price: 500000,
       size: 700,
       featured: true,
@@ -569,54 +569,6 @@ export default [
           fields: {
             file: {
               url: img12
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  },
-  {
-    sys: {
-      id: "13"
-    },
-    fields: {
-      name: "House 13",
-      slug: "presidential-house",
-      type: "presidential",
-      price: 600000,
-      size: 1000,
-      featured: true,
-      description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      extras: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: room1
             }
           }
         },
