@@ -4,12 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-<<<<<<< HEAD
-  --primaryColor: #a2aa37;
-  /* --primaryColor: #7fb4a7; */
-=======
   --primaryColor: #ada134;
->>>>>>> mbFrontEnd
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
