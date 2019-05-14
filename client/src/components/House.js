@@ -12,7 +12,6 @@ const house = memo(({ house }) => {
         <img src={images[0] || defaultImg} alt="single house" />
         <div className="price-top">
           <h6>${price}</h6>
-          <p>per night</p>
         </div>
         <Link to={`/houses/${slug}`} className="btn-primary house-link">
           features

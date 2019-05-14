@@ -23,7 +23,7 @@ export default class HouseProvider extends Component {
   getData = async () => {
     try {
       let response = await Client.getEntries({
-        content_type: "beachResortHouse"
+        content_type: "realEstateHouse"
       });
       let houses = this.formatData(response.items);
 

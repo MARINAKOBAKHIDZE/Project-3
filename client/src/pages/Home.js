@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
-import Featuredhouses from "../components/FeaturedHouses";
+// import Footer from "../components/Footer";
 const home = () => {
   return (
     <>
       <Hero>
-        <Banner title="luxurious houses" subtitle="Your Dream House Is Our Mission">
+        <Banner title="Luxurious Housing" subtitle="Your Dream House Is Our Mission">
           <Link to="/houses" className="btn-primary">
-            our houses
+            Listings
           </Link>
         </Banner>
       </Hero>
       <Services />
-      {/* <Featuredhouses /> */}
+      {/* <Footer /> */}
     </>
   );
 };
