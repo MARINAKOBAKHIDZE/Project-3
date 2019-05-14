@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import items from "./data";
+import items from "./data";
 import Client from "./Contentful";
 
 const HouseContext = React.createContext();
@@ -48,21 +48,21 @@ export default class HouseProvider extends Component {
 
   componentDidMount() {
     this.getData();
-    // let houses = this.formatData(items);
-    // let featuredhouses = houses.filter(house => house.featured === true);
-    // //
-    // let maxPrice = Math.max(...houses.map(item => item.price));
-    // let maxSize = Math.max(...houses.map(item => item.size));
-    // this.setState({
-    //   houses,
-    //   featuredhouses,
-    //   sortedhouses: houses,
-    //   loading: false,
-    //   //
-    //   price: maxPrice,
-    //   maxPrice,
-    //   maxSize
-    // });
+    let houses = this.formatData(items);
+    let featuredhouses = houses.filter(house => house.featured === true);
+    //
+    let maxPrice = Math.max(...houses.map(item => item.price));
+    let maxSize = Math.max(...houses.map(item => item.size));
+    this.setState({
+      houses,
+      featuredhouses,
+      sortedhouses: houses,
+      loading: false,
+      //
+      price: maxPrice,
+      maxPrice,
+      maxSize
+    });
   }
 
   formatData(items) {
