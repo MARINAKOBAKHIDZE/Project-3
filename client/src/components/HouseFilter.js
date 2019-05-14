@@ -19,8 +19,6 @@ const HouseFilter = ({ houses }) => {
     maxPrice,
     minSize,
     maxSize,
-    breakfast,
-    pets
   } = context;
 
   // get unique types
@@ -57,21 +55,6 @@ const HouseFilter = ({ houses }) => {
             {types}
           </select>
         </div>
-        {/* end of select type */}
-        {/* guests  */}
-        <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
-          <select
-            name="capacity"
-            id="capacity"
-            onChange={handleChange}
-            className="form-control"
-            value={capacity}
-          >
-            {people}
-          </select>
-        </div>
-        {/* end of guests */}
         {/* house price */}
         <div className="form-group">
           <label htmlFor="price">house price ${price}</label>
@@ -108,29 +91,6 @@ const HouseFilter = ({ houses }) => {
           </div>
         </div>
         {/* end of select type */}
-        {/* extras */}
-        <div className="form-group">
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">breakfast</label>
-          </div>
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="pets"
-              checked={pets}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">pets</label>
-          </div>
-        </div>
-        {/* end of extras type */}
       </form>
     </section>
   );
