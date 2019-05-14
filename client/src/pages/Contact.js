@@ -6,8 +6,12 @@ const Contact = () => {
   return (
     <Hero>
       <Banner title="Contact Us" subtitle="Email Us For More Information">
+      <Link to="/" className="btn-primary">
+          Contact
+        </Link>
+        <div></div>
         <Link to="/" className="btn-primary">
-          return home
+          Return Home
         </Link>
       </Banner>
     </Hero>
