@@ -12,7 +12,7 @@ const housesList = ({ houses }) => {
     <section className="houseslist">
       <div className="houseslist-center">
         {houses.map(item => {
-          return <house key={item.id} house={item} />;
+          return <House key={item.id} house={item} />;
         })}
       </div>
     </section>
