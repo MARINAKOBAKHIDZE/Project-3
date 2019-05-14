@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #a2aa37;
+  /* --primaryColor: #7fb4a7; */
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
