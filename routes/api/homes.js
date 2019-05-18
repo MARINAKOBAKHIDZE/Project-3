@@ -1,15 +1,15 @@
-const router = require("express").Router();
-const Homes = require("../../models/homesSale");
+// const router = require("express").Router();
+// const Homes = require("../../models/homesSale");
 
-module.exports = router;
+// module.exports = router;
 
-//getting all homes
+// //getting all homes
 
-router.get('/', (req,res) => {
+// router.get('/', (req,res) => {
 
-    Homes.findAll({}).then(results => {
-        // results are available to us inside the .then
-        res.json(results);
-      });
+//     Homes.findAll({}).then(results => {
+//         // results are available to us inside the .then
+//         res.json(results);
+//       });
 
-});
+// });
