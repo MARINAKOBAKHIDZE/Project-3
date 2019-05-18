@@ -17,6 +17,7 @@ var syncOptions = { force: false };
 // // If running a test, set syncOptions.force to true
 // clearing the `testdb`
 if (process.env.NODE_ENV === "test") {
+  console.log("Working!")
   syncOptions.force = true;
 }
 
@@ -30,7 +31,7 @@ if (process.env.NODE_ENV === "test") {
 //   res.json(customers);
 // });
 
-app.use("/api/homes", Homes)
+// app.use("/api/homes", Homes)
 
 const PORT = 5000;
 
