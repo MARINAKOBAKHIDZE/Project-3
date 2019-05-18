@@ -7,7 +7,7 @@ const app = express();
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("client/build"));
 
 // Routes
 //require("./routes/htmlRoutes")(app);
@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "test") {
 
 // app.use("/api/homes", Homes)
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Starting the server, syncing our models ------------------------------------/
 // db.sequelize.sync(syncOptions).then(function() {
