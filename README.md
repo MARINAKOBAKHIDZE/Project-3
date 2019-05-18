@@ -16,4 +16,5 @@ TECHNOLOGIES USED
     -Node
     -SQL
 
-IMAGES
+https://github.com/eric25412/finalproj3/issues/5#issue-445744812
+https://github.com/eric25412/finalproj3/issues/5#issuecomment-493700409
