@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const Homes = require("./routes/api/homes");
+// const Homes = require("./routes/api/homes");
 
 //var db = require("./models");
 
