@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import { withHouseConsumer } from "../context";
 import Loading from "./Loading";
 import HouseFilter from "./HouseFilter";
@@ -10,10 +10,10 @@ function HouseContainer({ context }) {
     return <Loading />;
   }
   return (
-    <>
+    <Fragment>
       <HouseFilter houses={houses} />
       <HouseList houses={sortedhouses} />
-    </>
+    </Fragment>
   );
 }
 

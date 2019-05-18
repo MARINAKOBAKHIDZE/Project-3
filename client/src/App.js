@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment}from "react";
 import "./App.css";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -12,7 +12,7 @@ import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <Fragment>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/houses/:slug" component={SingleHomes} />
         <Route component={Error} />
       </Switch>
-    </>
+    </Fragment>
   );
 }
 

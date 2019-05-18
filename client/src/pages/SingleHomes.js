@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import defaultBcg from "../images/house-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
@@ -47,7 +47,7 @@ export default class SingleHomes extends Component {
     console.log(defaultImages)
 
     return (
-      <>
+      <Fragment>
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`${name} house`}>
             <Link to="/houses" className="btn-primary">
@@ -81,7 +81,7 @@ export default class SingleHomes extends Component {
             ))}
           </ul>
         </section>
-      </>
+      </Fragment>
     );
   }
 }
